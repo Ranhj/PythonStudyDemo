@@ -1,7 +1,7 @@
 # !/usr/bin/env python
 # -*_ coding: utf-8 _*_
 # Author:     Ran_hj
-# Datetime:   0012  2022-04-12 17:07
+# Datetime:   2022-04-12 17:07
 # className:  shopping.py
 
 product_list = [
