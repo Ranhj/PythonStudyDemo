@@ -6,13 +6,14 @@
 
 product_list = [
     ("Mac", 9000),
-    ("Mac", 800),
-    ("Mac", 900000),
-    ("Mac", 105),
-    ("Mac", 2000),
+    ("kindle", 800),
+    ("tesla", 900000),
+    ("pythonbook", 105),
+    ("bike", 2000),
 ]
 saving = input('please input your money：')
 shopping_car = []
+
 if saving.isdigit():
     saving = int(saving)
     while True:
@@ -37,7 +38,7 @@ if saving.isdigit():
                     shopping_car.append(p_item)
 
                 else:
-                    print('余额不足，还剩%s'%saving)
+                    print('余额不足，还剩%s' % saving)
                 print(p_item)
             else:
                 print('编码不存在')
@@ -46,7 +47,7 @@ if saving.isdigit():
             # 循环遍历购物车里的商品，购物车存放的是已买商品
             for i in shopping_car:
                 print(i)
-            print('您还剩%s元钱'%saving)
+            print('您还剩%s元钱' % saving)
             break
         else:
             print('invalid input')
