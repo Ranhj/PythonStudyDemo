@@ -76,7 +76,7 @@
 # dict1 = dict([['a', 1],])
 # print(dict1)    # {'a': 1}
 
-# # dict增加键值对
+"""dict增加键值对"""
 # dict1 = {'name': 'Jack'}
 # dict1['age'] = 20
 # print(dict1)    # {'name': 'Jack', 'age': 20}
@@ -95,7 +95,9 @@
 # list2[0] = 4
 # print(list2)    # [4, 2, 3]
 
-# # dict追加
+
+
+"""dict追加操作"""
 # dict1 = {'name': 'Jack', 'age': 20}
 # dict2 = {'1': '11', '2': '22'}
 # dict1.update(dict2)
@@ -113,4 +115,226 @@
 # dict6 = {'name1': 'HanMeimei'}
 # dict5.update(dict6)
 # print(dict5)    # {'name': 'HanMeimei', 'age': 22}
+
+
+
+# """dict清空、删除操作"""
+# # dict.clear() 清空
+# dict7 = {'name': 'Tom', 'age': 20}
+# dict7.clear()
+# print(dict7)    # {}
+
+# # del dict['key'] 删除指定键值对
+# dict8 = {'name': 'Tom', 'age': 20}
+# del dict8['name']
+# print(dict8)    # {'age': 20}
+
+# # dict.pop('key') 删除指定键值对，并返回该键值对的值
+# dict9 = {'name': 'Tom', 'age': 20}
+# dict9.pop('age')
+# print(dict9)    # {'name': 'Tom'}
+
+# # dict.popitem() 不指定就随机删除某组键值对，并以元组方式返回值
+# dict10 = {'name': 'Tom', 'age': 20, 'hobby': 'guitar'}
+# dict11 = dict10.popitem()
+# print('随机删除的是：%s， 剩下的是：%s' % (dict11, dict10))
+# # 随机删除的是：('hobby', 'guitar')， 剩下的是：{'name': 'Tom', 'age': 20}
+
+# # del dict 删除整个字典
+# dict12 = {'name': 'Tom', 'age': 20, 'hobby': 'guitar'}
+# del dict12
+# print(dict12)   # 都已经删除了，当然会报错： NameError: name 'dict12' is not defined
+
+# # dict其他操作
+# # 相当于给每一个key赋初始值
+# dict13 = dict.fromkeys(['host1', 'host2', 'host3'], 'test')
+# print(dict13)   # {'host1': 'test', 'host2': 'test', 'host3': 'test'}
+# # 再指定某个key进行value值修改
+# dict13['host3'] = 'aaa'
+# print(dict13)
+
+# dict14 = dict.fromkeys(['host1', 'host2', 'host3'], ['test', 'test2'])
+# print(dict14) # {'host1': ['test', 'test2'], 'host2': ['test', 'test2'], 'host3': ['test', 'test2']}
+# dict14['host2'][1] = 'test3'
+# print(dict14) # {'host1': ['test', 'test3'], 'host2': ['test', 'test3'], 'host3': ['test', 'test3']}
+
+
+
+# '''dict 排序'''
+# # sorted(dict) , sorted(dict.items()) 排序都是默认按照key来排序
+# dict1 = {5:'555', 2:'222', 3:'333'}
+# print(sorted(dict1))    # [2, 3, 5]
+#
+# dict2 = {5:'555', 2:'666', 3:'333'}
+# print(sorted(dict2.items()))    # [(2, '666'), (3, '333'), (5, '555')]
+#
+# dict3 = {'name': 'Tom', 'age': 20, 'hobby': 'guitar'}
+# print(sorted(dict3.items()))    # [('age', 20), ('hobby', 'guitar'), ('name', 'Tom')]
+
+
+"""dict 循环遍历"""
+# dict4 = {'name': 'Tom', 'age': 20, 'hobby': 'guitar'}
+'''两种运行结果均为：
+name Tom
+age 20
+hobby guitar
+'''
+# for i in dict4:             # 推荐这种方法
+#     print(i, dict4[i])
+#
+# for i, v in dict4.items():  # 数据量大则不推荐，因为要转换，比较耗时
+#     print(i, v)
+
+
+
+
+"""
+    String操作 练习demo
+"""
+# # 1.重复输出字符串
+# print('W'*5)    # WWWWW
+#
+# # 2.过索引获取字符串中字符，和列表切片操作相同
+# print('helloworld'[2:]) # lloworld
+#
+# # 3.关键字 in
+# print('h' in 'hello')   # True
+#
+# # 4.格式字符串
+# print('%s是一位好%s' % ('小明', '同志'))    # 小明是一位好同志
+#
+# # 5 字符串拼接 + ,   ''.join([,,])  注：+效率低，建议用join
+# a = '123'
+# b = 'abc'
+# d = '一二三'
+# c = a + b + d
+# print(c)    # 123abc一二三
+#
+# c1 = ''.join([a, b, d])
+# print(c1)   # 123abc一二三
+
+#
+# """String内置方法"""
+# st = 'hello kitty'
+#
+# # 统计元素个数    .count('字符串')
+# print(st.count('t'))    # 2
+#
+# # 字符串首字母转换为大写   .capitalize()
+# print(st.capitalize())  # Hello kitty
+#
+#
+#
+# # 居中展示，两边指定字符填充 .center(要填充的数量, '用什么填充')
+# print(st.center(50, '-'))   # -------------------hello kitty--------------------
+# print('Hello'.center(50, '-'))  # ----------------------Hello-----------------------
+# # 居左，右边用指定字符进行填充  .ljust(要填充的数量, '用什么填充')
+# print('Hello'.ljust(50, '-'))   # Hello---------------------------------------------
+# # 居右，左边用指定字符进行填充  .rjust(要填充的数量, '用什么填充')
+# print('Hello'.rjust(50, '-'))   # ---------------------------------------------Hello
+#
+#
+#
+# # 判断是否以某个内容结尾，返回True/False    .endswith('字符串')
+# print(st.endswith('ty'))    # True
+#
+# # 判断是否以某个内容开头，返回True/False  .startswith('字符串')
+# print(st.startswith('H'))   # False
+#
+# #
+# st1 = 'he\tllo python'
+# print(st1.expandtabs(tabsize=10))   # he        llo python
+#
+# # 查找到第一个元素，并将索引值返回
+# print(st.find('e')) # 1
+#
+# # 格式化输出的另一种方式
+# st2 = 'hello kitty {name} is {age}'
+# print(st2.format(name='Tom', age=20))               # hello kitty Tom is 20
+# print(st2.format_map({'name': 'Jack', 'age': 18}))  # hello kitty Jack is 18
+#
+# # 返回指定子串的下标
+# st3 = 'hello kitty'
+# print(st3.index('i'))    # 7
+#
+# # 判断
+# print('abc'.isalnum())  # True
+# print('123'.isalnum())  # True
+# print('a1'.isalnum())   # True
+# print('棉花'.isalnum())  # True
+#
+# # 判断是否是十进制数
+# print('a'.isdecimal())  # False
+# print('10'.isdecimal()) # True
+#
+# # 判断返回的是否整型
+# print('1'.isdigit())    # True
+# print('1.2'.isdigit())  # False
+# print('a'.isdigit())    # False
+#
+# # 判断变量名是否满足规则
+# print('a'.isidentifier())   # True
+# print('_a'.isidentifier())  # True
+# print('*a'.isidentifier())  # False
+# print('0a'.isidentifier())  # False
+#
+# # 判断是否全小写
+# print('abc'.islower())  # True
+# print('aBc'.islower())  # False
+# print('ABC'.islower())  # False
+#
+# # 判断是否全大写
+# print('ABC'.isupper())  # True
+# print('aBC'.isupper())  # False
+# print('abc'.isupper())  # False
+#
+# # 判断是否是空格
+# print(' '.isspace())  # True
+# print('1'.isspace())  # False
+# print('1 '.isspace()) # False
+#
+# # 判断是否是title，title的要求是每个单词首字母大写
+# print('My Title'.istitle())  # True
+# print('My title'.istitle())  # False
+# print('MY TITLE'.istitle())  # False
+#
+# # 将所有大写字母转换为小写字母
+# print('MY TITLE'.lower())   # my title
+# print('My Title'.lower())   # my title
+# # 将所有小写字母转换为大写字母
+# print('my title'.upper())   # MY TITLE
+# print('My Title'.upper())   # MY TITLE
+# # 将原有的大小写字母全部反转：大变小、小变大
+# print('Ab'.swapcase())  # aB
+# print('AB'.swapcase())  # ab
+# print('ab'.swapcase())  # AB
+#
+# # 去掉字符串中的空格等，包括前、后的
+# print('    My Title'.strip())
+# print('My Title    '.strip())
+#
+# # 替换字符串 .replace('旧字符串', '新字符串', '替换次数')
+# print('My Title'.replace('My', 'You'))  # You Title
+# print('My My Title'.replace('My', 'You'))  # You You Title
+# print('My My Title'.replace('My', 'You', 1))  # You My Title  # 添加一个参数 1， 表示只替换一次
+#
+# # 返回目标子串处于字符串中从右往左第一次出现的下标
+# print('My two Title'.rfind('t'))    # 9
+#
+# # 指定用什么来分割字符串，并返回一个列表
+# print('My Title'.split(' '))    # ['My', 'Title']
+# print('hello'.split('e'))       # ['h', 'llo']  # e被用来作为分隔符了
+#
+# # 从右边开始查找并指定用什么来分割，添加参数指定分割次数
+# print('My two Title'.rsplit('t', 1))    # ['My two Ti', 'le']
+# print('My two Title ata'.rsplit('t', 1))    # ['My two Title a', 'a']
+# print('My two Title ata'.rsplit('t', 2))    # ['My two Ti', 'le a', 'a']
+#
+# # 将指定字符串转换为title，title的要求是每个单词首字母大写
+# print('my title'.title())   # My Title
+
+
+
+
+
 
