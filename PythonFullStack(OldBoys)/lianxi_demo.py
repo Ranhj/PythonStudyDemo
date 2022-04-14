@@ -3,7 +3,7 @@
 # Author:     Ran_hj
 # className:  lianxi_demo.py
 
-'''学习中知识点练习'''
+"""学习中知识点练习集锦"""
 
 # a = [1, 2, 3, 4]
 # b = sorted(a)
@@ -118,7 +118,7 @@
 
 
 
-# """dict清空、删除操作"""
+"""dict清空、删除操作"""
 # # dict.clear() 清空
 # dict7 = {'name': 'Tom', 'age': 20}
 # dict7.clear()
@@ -159,8 +159,7 @@
 # print(dict14) # {'host1': ['test', 'test3'], 'host2': ['test', 'test3'], 'host3': ['test', 'test3']}
 
 
-
-# '''dict 排序'''
+'''dict 排序'''
 # # sorted(dict) , sorted(dict.items()) 排序都是默认按照key来排序
 # dict1 = {5:'555', 2:'222', 3:'333'}
 # print(sorted(dict1))    # [2, 3, 5]
@@ -214,7 +213,7 @@ hobby guitar
 # print(c1)   # 123abc一二三
 
 #
-# """String内置方法"""
+"""String内置方法"""
 # st = 'hello kitty'
 #
 # # 统计元素个数    .count('字符串')
@@ -257,7 +256,7 @@ hobby guitar
 # st3 = 'hello kitty'
 # print(st3.index('i'))    # 7
 #
-# # 判断
+# # 判断指定字符串是否是字母或数字，返回True / False
 # print('abc'.isalnum())  # True
 # print('123'.isalnum())  # True
 # print('a1'.isalnum())   # True
