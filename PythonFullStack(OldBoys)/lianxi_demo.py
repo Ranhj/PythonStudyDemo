@@ -255,7 +255,7 @@ hobby guitar
 # # 返回指定子串的下标
 # st3 = 'hello kitty'
 # print(st3.index('i'))    # 7
-#
+
 # # 判断指定字符串至少有一个字符且所有字符都是字母或数字则返回 True， 否则返回 False
 # print('abc'.isalnum())  # True
 # print('123'.isalnum())  # True
