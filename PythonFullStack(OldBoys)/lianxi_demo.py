@@ -256,11 +256,15 @@ hobby guitar
 # st3 = 'hello kitty'
 # print(st3.index('i'))    # 7
 #
-# # 判断指定字符串是否是字母或数字，返回True / False
+# # 判断指定字符串至少有一个字符且所有字符都是字母或数字则返回 True， 否则返回 False
 # print('abc'.isalnum())  # True
 # print('123'.isalnum())  # True
 # print('a1'.isalnum())   # True
 # print('棉花'.isalnum())  # True
+# print('**'.isalnum())   # False
+# print(' '.isalnum())    # False
+# print('a 1'.isalnum())  # False
+
 #
 # # 判断是否是十进制数
 # print('a'.isdecimal())  # False
