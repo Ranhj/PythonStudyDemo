@@ -336,8 +336,4 @@ hobby guitar
 # # 将指定字符串转换为title，title的要求是每个单词首字母大写
 # print('my title'.title())   # My Title
 
-
-
-
-
-
+a = 'Hello'; b = 'How are you?'; print(a); print(b); print(a+b)
