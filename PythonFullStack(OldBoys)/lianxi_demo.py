@@ -1,5 +1,5 @@
 # !/usr/bin/env python
-# -*_ coding: utf-8 _*_
+# _*_ coding: utf-8 _*_
 # Author:     Ran_hj
 # className:  lianxi_demo.py
 
@@ -336,4 +336,23 @@ hobby guitar
 # # 将指定字符串转换为title，title的要求是每个单词首字母大写
 # print('my title'.title())   # My Title
 
-a = 'Hello'; b = 'How are you?'; print(a); print(b); print(a+b)
+# python代码可以写一行，用分号隔开
+# a = 'Hello'; b = 'How are you?'; print(a); print(b); print(a+b)
+
+# python2运行
+# s = "特斯拉"
+# s_to_unicode = s.decode("utf-8")
+# unicode_to_gbk = s_to_unicode.encode("gbk")
+# print(s)
+# print(s_to_unicode)
+# print(unicode_to_gbk)
+
+
+# import sys
+# print(sys.getdefaultencoding()) # 查看默认编码
+
+
+"""day 8"""
+# 能调用方法的一定是对象
+
+
