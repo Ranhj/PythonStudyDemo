@@ -402,13 +402,59 @@ hobby guitar
 # print(a1)
 # print(b1)
 
-i = [[1, 2], 3, 4]
-j = i
-# j[1] = 33
-j[0] = 11, 22
-k = j.copy()
-k[2] = 444444
-i.clear()
-print(f'i:{i}') # i:[]
-print(f'j:{j}') # j:[]
-print(f'k:{k}') # k:[(11, 22), 3, 444444]
+# i = [[1, 2], 3, 4]
+# j = i
+# # j[1] = 33
+# j[0] = 11, 22
+# k = j.copy()
+# k[2] = 444444
+# i.clear()
+# print(f'i:{i}') # i:[]
+# print(f'j:{j}') # j:[]
+# print(f'k:{k}') # k:[(11, 22), 3, 444444]
+
+
+# s1 = set('what')
+# print(s1)
+#
+# s1.update('is')
+# print(s1)
+#
+# s1.add('you')
+# print(s1)
+
+# s2 = set([1, 3])
+# s3 = set([1, 2, 3, 4])
+# print(s2)
+# print(s3)
+# print(s2 < s3)
+# print(s2 > s3)
+# print(s2 == s3)
+# s4 = s2 & s3
+# print(s4)
+
+
+# def f(**kwargs):
+#     print(kwargs)
+#
+# # f(info={'name': "Lily"})    # {'info': {'name': 'Lily'}}
+# f(**{'name': "Lily"})   # {'name': 'Lily'}  要想直接传入字典，可以在前面加上**
+
+
+# a = [x for x in range(10)]
+# print(a)    # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# t = ('aaa', 6, 9)
+# a, b, c = t
+# # a = t[0]
+# # b = t[1]
+# print(a)    # aaa
+# print(b)    # 6
+
+
+# import time
+# start_time = time.time()
+# list = [x for x in range(100000000)]
+# print(list)
+# end_time = time.time()
+# print('spend: %s' % (end_time - start_time))
