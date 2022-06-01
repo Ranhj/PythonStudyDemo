@@ -458,3 +458,8 @@ hobby guitar
 # print(list)
 # end_time = time.time()
 # print('spend: %s' % (end_time - start_time))
+
+from collections import Iterator
+# print(isinstance([1,2],list))   # True
+# print(isinstance('a',list))     # False
+
