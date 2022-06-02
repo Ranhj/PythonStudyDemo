@@ -1,0 +1,5 @@
+Thu, 02 Jun 2022 15 :49:34 logging_module_demo.py[line:26] DEBUG debug message1
+Thu, 02 Jun 2022 15 :49:34 logging_module_demo.py[line:27] INFO info message2
+Thu, 02 Jun 2022 15 :49:34 logging_module_demo.py[line:28] WARNING warning message3
+Thu, 02 Jun 2022 15 :49:34 logging_module_demo.py[line:29] ERROR error message4
+Thu, 02 Jun 2022 15 :49:34 logging_module_demo.py[line:30] CRITICAL critical message5
