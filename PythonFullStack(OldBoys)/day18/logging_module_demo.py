@@ -27,6 +27,7 @@ logging.basicConfig(
 # 若同时列出了filename和stream两个参数，则stream参数会被忽略
 
 
+
 logging.debug('debug message')
 logging.info('info message')
 logging.warning('warning message')  # WARNING:root:warning message
