@@ -463,3 +463,16 @@ from collections import Iterator
 # print(isinstance([1,2],list))   # True
 # print(isinstance('a',list))     # False
 
+# import re
+# ret = re.search('\([^()]+\)', '(1+(2+5)*2)')
+# print(ret.group())  # (2+5)
+
+import os
+# print(os.path.abspath(__file__))
+# print(os.path.dirname(os.path.abspath(__file__)))
+# print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+"""
+D:\Study\python_workspace\PythonStudyDemo\PythonFullStack(OldBoys)\lianxi_demo.py
+D:\Study\python_workspace\PythonStudyDemo\PythonFullStack(OldBoys)
+D:/Study/python_workspace/PythonStudyDemo/PythonFullStack(OldBoys)/lianxi_demo.py:462: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+"""
