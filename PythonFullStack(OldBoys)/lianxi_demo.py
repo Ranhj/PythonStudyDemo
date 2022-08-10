@@ -476,3 +476,26 @@ D:\Study\python_workspace\PythonStudyDemo\PythonFullStack(OldBoys)\lianxi_demo.p
 D:\Study\python_workspace\PythonStudyDemo\PythonFullStack(OldBoys)
 D:/Study/python_workspace/PythonStudyDemo/PythonFullStack(OldBoys)/lianxi_demo.py:462: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
 """
+
+# """验证码"""
+# import random
+#
+# def v_code():
+#
+#     code = ''
+#     for i in range(4):
+#
+#         num = random.randint(0, 9)
+#         alf = chr(random.randint(65, 90))
+#         add = random.choice([num, alf])
+#         code += str(add)
+#     return code
+#
+# print(v_code())
+
+
+# import json
+# x = "[null,true,false,1]"
+# print(eval(x))
+# print(json.loads(x))
+
