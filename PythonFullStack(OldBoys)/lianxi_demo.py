@@ -499,3 +499,15 @@ D:/Study/python_workspace/PythonStudyDemo/PythonFullStack(OldBoys)/lianxi_demo.p
 # print(eval(x))
 # print(json.loads(x))
 
+# 封装
+class Bar:
+    def __init__(self, n, a):
+        self.name = n
+        self.age = a
+        self.gender = '男'
+
+    def Person(self):
+        print(self.name, self.age, self.gender)
+
+p1 = Bar('Jack', 18)
+p1.Person()
